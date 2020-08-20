@@ -1,7 +1,7 @@
 # php-7.2_Docker
-ubuntu 18.04 / apache2 / php 7.2
+Ubuntu 18.04 / Apache2 / PHP 7.2
 
-### Create Container Process
+### **Apache ~ PHP 7.2 container** Container creation process
 
 1. Getting Dockerfile
    
@@ -16,7 +16,10 @@ ubuntu 18.04 / apache2 / php 7.2
     build -t php7.2 .
     ```
 
-    After completing the build, check the generated image run `docker images`
+    After completing the build, through `docker images` command execution check the generated image run
     
-
-3. 
+3. Mount your `./src` directory and run the **Apache ~ PHP 7.2 container**
+   
+    ```bash
+    docker run -it -p 8080:80 -v {$YOUR_WORKSPACE_DIRECTORY}/php-7.2_Docker/src:/var/www/html --name php7.2 php7.2 bash
+    ```
