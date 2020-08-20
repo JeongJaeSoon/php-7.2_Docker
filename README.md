@@ -21,6 +21,5 @@ Ubuntu 18.04 / Apache2 / PHP 7.2
 3. Mount your `./src` directory and run the **Apache ~ PHP 7.2 container**
    
     ```bash
-    mkdir {$YOUR_WORKSPACE_DIRECTORY}/php-7.2_Docker/src
-    docker run -it -p 8080:80 -v {$YOUR_WORKSPACE_DIRECTORY}/php-7.2_Docker/src:/var/www/html --name php7.2 php7.2 bash
+    docker run -it -p 8080:80 -v {$YOUR_WORKSPACE_DIRECTORY}/php-7.2_Docker/src:/var/www/html --name php7.2 php7.2
     ```
